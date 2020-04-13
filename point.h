@@ -14,12 +14,13 @@ Location of organism: [36 27],  Closest food target : [55 38]
 */
 
 typedef struct Point Point;
+#define FOR(start, limit) for (int i = start; i < limit; i++)
 
 struct Point
 {
   int x;
   int y;
-} ;
+};
 
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location);
-unsigned int get_distance(Point pointA,Point pointB);
+unsigned int get_distance(Point pointA, Point pointB);
