@@ -23,4 +23,4 @@ struct Point
 };
 
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location);
-unsigned int get_distance(Point pointA, Point pointB);
+float get_distance(Point pointA, Point pointB);
